@@ -13,7 +13,7 @@ func _ready():
 	for cellpos in tilemap.get_used_cells_by_id(0):
 		var cell = tilemap.get_cellv(cellpos) 
 		var object = BLOCK.instance()
-		object.position = tilemap.map_to_world(cellpos) + Vector2(7.9, 7.7)
+		object.position = tilemap.map_to_world(cellpos) + Vector2(8, 8)
 		add_child(object)
 		tilemap.set_cellv(cellpos, -1)
 			
@@ -22,7 +22,7 @@ func _ready():
 		var cell = tilemap.get_cellv(cellpos)
 		print("a")
 		var object = Mushroom_Block.instance()
-		object.position = tilemap.map_to_world(cellpos) + Vector2(8, 7.7)
+		object.position = tilemap.map_to_world(cellpos) + Vector2(8, 8)
 		add_child(object)
 		tilemap.set_cellv(cellpos, -1)
 			
