@@ -12,7 +12,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 7.20365, 7.66769 )
+extents = Vector2( 8.10277, 8.19354 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -62,7 +62,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 5.5, 0.5 )
+extents = Vector2( 5.5, 1 )
 
 [node name="OneCoin" type="StaticBody2D"]
 collision_layer = 10
@@ -73,7 +73,7 @@ script = ExtResource( 2 )
 frames = SubResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.443476, 0.0354085 )
+position = Vector2( 0.324676, 0.236864 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -85,7 +85,7 @@ anims/bote2 = SubResource( 5 )
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0.5, 8.5 )
+position = Vector2( 0.5, 9 )
 shape = SubResource( 6 )
 
 [connection signal="animation_changed" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_changed"]
